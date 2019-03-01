@@ -1,10 +1,9 @@
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
-// import Vue from 'vue'
+import Vue from 'vue'
 import * as components from './components'
 
-// Vue.config.productionTip = false
-
+/* eslint-disable */
 var ZeldaVuestory = {
   install: function (Vue, opts = {}) {
     // コンポーネントの登録
@@ -17,6 +16,7 @@ var ZeldaVuestory = {
       }
     })(components)
   },
+  components: components[0],
   version: '1.0'
 }
 

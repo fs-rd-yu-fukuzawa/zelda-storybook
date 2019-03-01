@@ -1,6 +1,7 @@
 <template lang="pug">
-  button
-    slot
+  <button>
+    <slot/>
+  </button>
 </template>
 
 <script>

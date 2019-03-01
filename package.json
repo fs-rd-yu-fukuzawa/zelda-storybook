@@ -4,6 +4,10 @@
   "description": "Vue.js Storybook Project",
   "author": "fs-rd-yu-fukuzawa <yu.fukuzawa@f-scratch.com>",
   "private": true,
+  "main": "./src/main.js",
+  "bin": {
+    "zelda-storybook": "./src/main.js"
+  },
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
@@ -62,6 +66,7 @@
     "postcss-loader": "^2.0.8",
     "postcss-url": "^7.2.1",
     "pug": "^2.0.3",
+    "pug-loader": "^2.4.0",
     "pug-plain-loader": "^1.0.0",
     "rimraf": "^2.6.0",
     "sass-loader": "^7.1.0",
