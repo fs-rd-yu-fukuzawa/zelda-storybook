@@ -7,7 +7,10 @@ module.exports = (storybookBaseConfig, configType, defaultConfig) => {
       'vue-style-loader',
       'css-loader',
       'sass-loader'
-    ],
+    ]
+  }, {
+    test: /\.pug$/,
+    loader: 'pug-plain-loader'
   });
 
   return defaultConfig;
